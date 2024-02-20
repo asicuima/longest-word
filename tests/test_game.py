@@ -7,7 +7,7 @@ class TestGame:
 
         assert new_game.is_valid('') is False
 
-    def test_valid(self, word):
+    def test_valid(self):
         new_game = Game()
         test_grid = 'KWEUEAKRZ'
         test_word = 'EUREKA'

@@ -27,3 +27,9 @@ class Game:
         response = pip._vendor.requests.get(f"https://wagon-dictionary.herokuapp.com/{word}")
         json_response = response.json()
         return json_response['found']
+
+
+new_game = Game()
+new_game.grid = list('ABCD')
+my_word = 'BAD'
+new_game.is_valid(my_word)
